@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>TRASHZINE</title>
@@ -39,6 +39,10 @@ body {
 	padding-bottom:100px;
 }
 
+#first {
+	padding-bottom: 60px;
+}
+
 .dark {
 	background-color:rgb(15,15,15);
 	color:white;
@@ -46,7 +50,7 @@ body {
 
 .light {
 	background-color:rgba(255,255,255,0.7);
-	color:black;	
+	color:#292929;	
 }
 
 .light a {
@@ -66,12 +70,43 @@ h1 {
 	text-decoration: line-through;
 }
 
-p {
+p, #first a {
 	font-size: 20px;
+}
+
+.press {
+	display: block;
+	border: 2px solid #292929;
+	margin: 30px;
+	padding: 15px;
+	-webkit-transition: background-color 500ms ease-out;
+    -moz-transition: background-color 500ms ease-out;
+    -o-transition: background-color 500ms ease-out;
+    transition: background-color 500ms ease-out;
+}
+
+#first a {
+	text-decoration: none;
+}
+
+.press:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+	-webkit-transition: background-color 500ms ease-out;
+    -moz-transition: background-color 500ms ease-out;
+    -o-transition: background-color 500ms ease-out;
+    transition: background-color 500ms ease-out;
+}
+
+.movetop {
+	margin-top: 60px;
+}
+
+.movebottom {
+	margin-bottom: 0px;
 }
    
 @media (max-width: 600px) {
-	p {
+	p, #first a {
 		font-size: 18px;
 	}
 
@@ -86,17 +121,20 @@ p {
 }
 
 @media (max-width: 400px) {
-	p {
+	p, #first a {
 		font-size: 16px;
 	}
 }
 
 </style>
 <body> 
-	<div class="contain first light">
+	<div class="contain first light" id="first">
 		<h1>TRASHZINE</h1>
 		<!-- <img src="inspo.png" alt="tweet screenshot"> -->
 		<p>Alt Games, Small Games, Non Games: a love letter (zine) to unconventional game developers</p>
+		<a href="https://tinyletter.com/trashzine"><span class="press movetop">Subscribe to our newsletter</span></a>
+		<a href="https://twitter.com/trashzinedotnet"><span class="press">Follow us on Twitter</span></a>
+		<a href="https://trashzine.itch.io/"><span class="press movebottom">Follow us on itch.io</span></a>
 	</div>
 
 	<div class="contain dark">
@@ -114,7 +152,7 @@ p {
 		<p><span class="linethru">TRASHZINE</span> will be completely free to download on itch.io. We are planning on releasing the first volume by August 2017.</p>
 	</div>
 	<div class="contain light">
-		<p>If you'd like to get in touch, you can <a href="mailto:vaidaplankyte@gmail.com">email</a> or tweet one of us:</p>
+		<p>If you'd like to get in touch, you can <a href="mailto:trashzinedotnet@gmail.com">email</a> or tweet one of us:</p>
 		<p><a href="https://twitter.com/underskinnyhrt">Vaida Plankyte</a></p>
 		<p><a href="https://twitter.com/dwarph">Pip Turner</a></p>
 		<p><a href="https://twitter.com/Bryghtside">Tom Borcherds</a></p>
